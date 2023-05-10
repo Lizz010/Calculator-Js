@@ -1,0 +1,66 @@
+/* Colors pallete 
+/* Color Theme Swatches in Hex */
+/* .lonelyvioletgirl-1-hex { color: #D996C7; }
+.lonelyvioletgirl-2-hex { color: #F2C9E7; }
+.lonelyvioletgirl-3-hex { color: #BF60AF; }
+.lonelyvioletgirl-4-hex { color: #723873; }
+.lonelyvioletgirl-5-hex { color: #102426; } */
+
+/* Color Theme Swatches in RGBA */
+/* .lonelyvioletgirl-1-rgba { color: rgba(216, 149, 198, 1); }
+.lonelyvioletgirl-2-rgba { color: rgba(242, 200, 230, 1); }
+.lonelyvioletgirl-3-rgba { color: rgba(191, 96, 175, 1); }
+.lonelyvioletgirl-4-rgba { color: rgba(114, 56, 114, 1); }
+.lonelyvioletgirl-5-rgba { color: rgba(16, 35, 38, 1); } */
+
+/* Color Theme Swatches in HSLA */
+/* .lonelyvioletgirl-1-hsla { color: hsla(316, 46, 71, 1); }
+.lonelyvioletgirl-2-hsla { color: hsla(316, 61, 86, 1); }
+.lonelyvioletgirl-3-hsla { color: hsla(310, 42, 56, 1); }
+.lonelyvioletgirl-4-hsla { color: hsla(298, 34, 33, 1); }
+.lonelyvioletgirl-5-hsla { color: hsla(185, 40, 10, 1); } */
+
+body{
+    padding: 0;
+    margin: 0;
+    background: #723873;
+}
+
+.calculator-grilla{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator-grilla > button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: #BF60AF;
+}
+
+.output{
+    grid-column: 1 / -1;
+    background-color: #F2C9E7;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-wrap: break-all;
+}
+
+.output .display{
+    color: black;
+    font-size: 1.85rem;
+    text-align: right;
+}
+
+.calculator-grilla > button:hover{
+    background-color: #D996C7;
+}
